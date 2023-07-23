@@ -1,29 +1,12 @@
 # GTSRB Dataset: Transfer Learning VGG16 for road signs
----
-jupyter:
-  accelerator: GPU
-  colab:
-    history_visible: true
-    include_colab_link: true
-  gpuClass: premium
-  kernelspec:
-    display_name: Python 3
-    language: python
-    name: python3
-  language_info:
-    codemirror_mode:
-      name: ipython
-      version: 3
-    file_extension: .py
-    mimetype: text/x-python
-    name: python
-    nbconvert_exporter: python
-    pygments_lexer: ipython3
-    version: 3.7.12
-  nbformat: 4
-  nbformat_minor: 5
----
 
+This project attempts to implement transfer learning by retraining VGG16 network to recognise traffic signs. 
+This will be completed by freezing many of the existing layers of the VGG16 network, trained on ImageNet, and adding further classification layers onto the end of the VGG16 network.
+Then data from the GTSRB dataset will be processed and fed into the augmented VGG16 network for training.
+The network will then be evaluated on never before seen test images to gauge the performance of the model.
+This will be iterated to produce the optimal model for classifying traffic sign data.
+
+[Short article written on this project](GTSRB_Transfer_Learning.pdf)
 
 # The Setup
 
